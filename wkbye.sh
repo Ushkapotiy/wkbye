@@ -20,7 +20,7 @@ while true; do
 	source $ru/language/ru.sh;;
 	[9exit])
 	clear
-	exit;;
+	exit 0;;
 	* ) clear
 	source /$ru/disig;;
 esac
