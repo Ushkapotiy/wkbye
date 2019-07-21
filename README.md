@@ -1,6 +1,6 @@
 Setup
 ==========
-* git clone https://github.com/Ushkapotiy/wkbye/wkbye.git
+* git clone https://github.com/Ushkapotiy/wkbye.git
 * cd wkbye
 * chmod +x setup.sh
 * ./setup.sh
