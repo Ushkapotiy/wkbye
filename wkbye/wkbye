@@ -1,0 +1,27 @@
+#!/bin/bash
+clear
+readonly ru=$(dirname $(readlink -f "$0"))
+clear
+source $ru/disig
+while true; do 
+	echo -e  "\e[5m\e[33mselect your language\e[0m"
+	echo""
+	echo "[1] en / English"
+	echo "[2] ru / Русский"
+	echo""
+	echo "[99] EXIT"
+	read -p "language> " lang
+	case $lang in
+	[1])
+	clear
+	$ru/language/en;;
+	[2])
+	clear
+	$ru/language/ru;;
+	[99exit])
+	clear
+	exit;;
+	* ) clear
+	source /$ru/disig;;
+esac
+done
