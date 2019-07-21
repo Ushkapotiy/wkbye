@@ -3,7 +3,7 @@ clear
 readonly ru1=$(dirname $(readlink -f "$0"))
 readonly ru=${ru1//help}
 clear
-source /$ru/disig
+source /$ru/desig
 while true; do
 echo ""
 echo -e  "\e[33m[1] Атака A: Отправляет фреймы аутентификации всем ТД найденным в диапазоне доступности. Слишком много клиентов может привести к зависанию или перезагрузке ТД. "
@@ -24,6 +24,6 @@ case $per in
 	source $ru/language/ru.sh;;
 	*) 
 	clear
-	source $ru/disig;;
+	source $ru/desig;;
 esac
 done

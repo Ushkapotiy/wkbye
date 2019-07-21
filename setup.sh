@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 readonly ru=$(dirname $(readlink -f "$0"))
-source $ru/disig
+source $ru/desig
 apt install mdk4
 apt install aircrack-ng
 chmod ugo+x $ru/language/ru.sh

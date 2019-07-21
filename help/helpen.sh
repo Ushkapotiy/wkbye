@@ -3,7 +3,7 @@ clear
 readonly ru1=$(dirname $(readlink -f "$0"))
 readonly ru=${ru1//help}
 clear
-source /$ru/disig
+source /$ru/desig
 while true; do
 echo ""
 echo -e  "\e[33m[1] Attack A: Sends authentication frames to all APs found in range. Too many clients can freeze or reset several APs. "
@@ -24,6 +24,6 @@ case $per in
 	source $ru/language/en.sh;;
 	*)
 	clear
-	source $ru/disig;;
+	source $ru/desig;;
 esac
 done

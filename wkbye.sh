@@ -2,7 +2,7 @@
 clear
 readonly ru=$(dirname $(readlink -f "$0"))
 clear
-source $ru/disig
+source $ru/desig
 while true; do 
 	echo -e  "\e[5m\e[33mselect your language\e[0m"
 	echo""
@@ -22,6 +22,6 @@ while true; do
 	clear
 	exit 0;;
 	* ) clear
-	source /$ru/disig;;
+	source /$ru/desig;;
 esac
 done
