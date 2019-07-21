@@ -9,16 +9,16 @@ while true; do
 	echo "[1] en / English"
 	echo "[2] ru / Русский"
 	echo""
-	echo "[99] EXIT"
+	echo -e "\e[31m[9] EXIT\e[0m"
 	read -p "language> " lang
 	case $lang in
 	[1])
 	clear
-	$ru/language/en;;
+	source $ru/language/en.sh;;
 	[2])
 	clear
-	$ru/language/ru;;
-	[99exit])
+	source $ru/language/ru.sh;;
+	[9exit])
 	clear
 	exit;;
 	* ) clear

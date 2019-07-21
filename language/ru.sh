@@ -2,6 +2,7 @@
 clear
 readonly ru1=$(dirname $(readlink -f "$0"))
 readonly ru=${ru1//language}
+clear
 source /$ru/disig
 read -p "WIFI модуль: " module
 airmon-ng stop ${module}mon
@@ -17,8 +18,8 @@ while true; do
  	 echo "[4] Атака D"
 	 echo "[5] Атака E"
 	echo ""
-	 echo "[88] Помощь"
-	  echo -e "[99] Назад\e[0m"
+	 echo -e "\e[31m[8] Помощь"
+	  echo -e "[9] Назад\e[0m"
 	  read -p "Attack> " attack
          case $attack in 
 	 [1Aa] )
@@ -52,17 +53,17 @@ while true; do
 	 aireplay-ng -0 $pack -e $essid ${module}mon
 	clear
 	source /$ru/disig;;
-	[99])
+	[9exit])
 	clear
 	source /$ru/disig
 	airmon-ng stop ${module}mon
 	NetworkManager
 	clear
 	source /$ru/disig
-	/$ru/wkbye ;;
+	/$ru/wkbye.sh ;;
 	[8help])
 	clear
-	$ru/help/helpru;;
+	source $ru/help/helpru.sh;;
 	* ) clear
 	source /$ru/disig;;
 esac

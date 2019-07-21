@@ -15,12 +15,12 @@ echo "[4] Атака D: Отправляет пакеты деаутентифи
 echo ""
 echo -e "[5] Атака E: Глушит определенную точку WIFI\e[0m"
 echo ""
-echo -e "\e[33m[99] выход\e[0m"
+echo -e "\e[31m[9] выход\e[0m"
 read -p "help > " per
 case $per in
-	[99exit]*) 
+	[9exit]) 
 	clear
-	$ru/language/./ru;;
+	source $ru/language/ru.sh;;
 	*) 
 	clear
 	source $ru/disig;;

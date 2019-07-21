@@ -15,12 +15,12 @@ echo "[4] Attack D: Sends deauthentication and disassociation packets to station
 echo ""
 echo -e "[5] Атака E: Crashes the certain WiFi network\e[0m"
 echo ""
-echo -e "\e[33m[99] exit\e[0m"
+echo -e "\e[31m[9] exit\e[0m"
 read -p "help > " per
 case $per in
-	[99exit]*)
+	[9exit])
 	clear
-	$ru/language/./en;;
+	source $ru/language/en.sh;;
 	*)
 	clear
 	source $ru/disig;;
