@@ -2,6 +2,7 @@
 clear
 readonly ru1=$(dirname $(readlink -f "$0"))
 readonly ru=${ru1//help}
+clear
 source /$ru/disig
 while true; do
 echo ""
