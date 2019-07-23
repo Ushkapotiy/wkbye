@@ -16,13 +16,13 @@ echo "[4] Атака D: Отправляет пакеты деаутентифи
 echo ""
 echo -e "[5] Атака E: Глушит определенную точку WIFI\e[0m"
 echo ""
-echo -e "\e[31m[9] выход\e[0m"
+echo -e "\e[31m[99] выход\e[0m"
 read -p "help > " per
 case $per in
-	[9exit]) 
+	99|exit)
 	clear
 	source $ru/language/ru.sh;;
-	*) 
+	*)
 	clear
 	source $ru/desig;;
 esac

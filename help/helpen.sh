@@ -14,12 +14,12 @@ echo "[3] Attack C: Reworked WiFi-jammer (Crash all networks around you)"
 echo ""
 echo "[4] Attack D: Sends deauthentication and disassociation packets to stations based on data traffic to disconnect all clients from an AP. "
 echo ""
-echo -e "[5] Attack E: Crashes the certain WiFi network\e[0m"
+echo -e "[5] Атака E: Crashes the certain WiFi network\e[0m"
 echo ""
-echo -e "\e[31m[9] exit\e[0m"
+echo -e "\e[31m[99] exit\e[0m"
 read -p "help > " per
 case $per in
-	[9exit])
+	99|exit)
 	clear
 	source $ru/language/en.sh;;
 	*)
