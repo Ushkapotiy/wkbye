@@ -1,7 +1,7 @@
 Setup
 ==========
 * git clone https://github.com/Ushkapotiy/wkbye.git
-* cd wkbye
+* cd wkbye/
 * chmod +x setup.sh
 * ./setup.sh
 * ./wkbye.sh
@@ -18,3 +18,7 @@ Help
 [4] Attack D: Sends deauthentication and disassociation packets to stations based on data traffic to disconnect all clients from an AP.
 
 [5] Attack E: Crashes the certain WiFi network
+
+Contact
+=========
+Send mails to me on githubplaycom2@mail.ru
